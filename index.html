@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>ATS Resume Analyzer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Match your resume against a job description, find missing skills and fix them.">
+</head><body>
+<main>
+<h1>ATS Resume Analyzer</h1>
+<p class="sub">Upload or paste your resume, paste the job description, and get a score, skill gaps against the job, marked problems and the exact replacement for each.</p>
+<div class="grid">
+<div class="card"><h2>1. Your resume</h2><textarea id="res" placeholder="Paste resume text here, or upload a PDF below"></textarea>
+<div class="row"><label class="btn btn2">Upload PDF<input type="file" id="pdf" accept=".pdf,.txt"></label><span class="mu" id="st"></span></div></div>
+<div class="card"><h2>2. Job description</h2><textarea id="jd" placeholder="Paste the full job description here"></textarea>
+<div class="mu" style="margin-top:10px">Use a different job description for each application.</div></div></div>
+<button id="go">Analyze my resume</button>
+<div id="out" hidden style="margin-top:20px"></div>
+<p class="mu">Note: no tool can reproduce a specific company's ATS exactly. This score is a guide based on keyword match, structure and parseability. Your resume stays in your browser.</p>
+</main>
+<script type="module" src="/src/main.js"></script>
+</body></html>
